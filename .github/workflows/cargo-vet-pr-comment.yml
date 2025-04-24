@@ -106,7 +106,7 @@ jobs:
               issue_number: ${{ needs.find-pr-comment.outputs.pr-number }},
               owner: context.repo.owner,
               repo: context.repo.repo,
-              labels: 'cargo vet'
+              labels: ['cargo vet']
             })
 
   post-comment-success:
